@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmyliba_frontend=self.webpackChunkmyliba_frontend||[]).push([[338],{338:(l,t,n)=>{n.r(t),n.d(t,{ROUTES:()=>e});var o=n(5861);const e=[{path:"",title:"Home",loadComponent:(s=(0,o.Z)(function*(){return(yield n.e(90).then(n.bind(n,6090))).HomePage}),function(){return s.apply(this,arguments)})}];var s}}]);
