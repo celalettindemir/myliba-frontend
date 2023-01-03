@@ -26,6 +26,8 @@ export class PersonalModalComponent {
 
   form!: FormGroup;
   description:string;
+  actionName!:string;
+
   personal!:Personal|null;
   name = new FormControl("", [Validators.required, Validators.minLength(3)]);
   surname = new FormControl("", [Validators.required, Validators.minLength(3)]);
@@ -53,6 +55,12 @@ export class PersonalModalComponent {
     @Inject(MAT_DIALOG_DATA) data:any,private _personalService: PersonalService,private _snackBar: MatSnackBar) {
     this.personal=data;
     this.description = data.description;
+    if(!this.personal?.hasOwnProperty('id')){
+      this.actionName='Save';
+    }
+    else{
+      this.actionName='Update';
+    }
   }
 
 

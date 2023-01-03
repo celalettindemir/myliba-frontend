@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4360239040231802726" datatype="html">
+        <source> İşlemler </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lib/components/data-list/data-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6455725997656430239" datatype="html">
+        <source> Personel Yönetimi </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.page.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5354400221443653553" datatype="html">
+        <source>Personel Oluştur</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.page.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Kapat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/personal-modal/personal-modal.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

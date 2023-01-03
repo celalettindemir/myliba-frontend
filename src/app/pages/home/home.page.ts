@@ -46,7 +46,7 @@ export class HomePage implements OnInit{
     dialogConfig.autoFocus = true;
     dialogConfig.data = {
       ...data,
-      description: 'Create Personal'
+      description: data?'Update Personal':'Create Personal'
     };
     let dialogRef=this.dialog.open(PersonalModalComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(result => {
