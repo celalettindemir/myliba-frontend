@@ -29,5 +29,5 @@ jobs:
           host: ${{ secrets.HOST }}
           remote: /var/www/myliba.celalettindemir.dev/html/
           port: ${{ secrets.PORT }}
-          user: ${{ secrets.USERNAME }}
+          user: ${{ secrets.USER }}
           key: ${{ secrets.KEY }}
