@@ -23,10 +23,11 @@ jobs:
 
       - name: Deploy
         if: success()
-        uses: up9cloud/action-rsync@master
+        uses: nogsantos/scp-deploy@master
         with:
+          src: ./dist/myliba-frontend
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          source: dist/
-          target: /var/www/myliba.celalettindemir.dev/html/
+          remote: /var/www/myliba.celalettindemir.dev/html/
+          port: ${{ secrets.PORT }}
+          user: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
