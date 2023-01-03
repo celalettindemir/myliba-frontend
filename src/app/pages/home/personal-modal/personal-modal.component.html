@@ -7,6 +7,6 @@
   <app-field-input value="{{personal?.email??''}}" name="email" label="Email" placeHolder="jonh@doe.com" iconName="mail" [customFormControl]="email" [getErrorMessage]="errorMessages"></app-field-input>
 </mat-dialog-content>
 <mat-dialog-actions align="end" style="width: 100%">
-  <button mat-raised-button (click)="close()" i18n>Close</button>
+  <button mat-raised-button (click)="close()">Close</button>
   <button mat-raised-button color="primary" (click)="save()" 18n>{{actionName}}</button>
 </mat-dialog-actions>

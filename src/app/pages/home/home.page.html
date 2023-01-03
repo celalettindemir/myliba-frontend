@@ -1,10 +1,10 @@
 <div style="display: flex;flex-direction: column;margin: 0px 100px;gap: 10px">
   <div style="display: flex;flex-direction: row;justify-content: space-between;">
-    <div i18n>
+    <div>
       Personal Management
     </div>
     <div>
-      <button mat-raised-button color="primary" (click)="openDialog()" i18n>Create Personal</button>
+      <button mat-raised-button color="primary" (click)="openDialog()">Create Personal</button>
     </div>
   </div>
   <app-data-list [pageItem]="pageItem" [displayedColumns]="columnsToDisplay" [editable]="true" [onEdit]="editPersonal" [onDelete]="deletePersonal" >
