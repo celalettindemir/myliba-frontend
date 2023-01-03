@@ -23,11 +23,11 @@ jobs:
 
       - name: Deploy
         if: success()
-        uses: nogsantos/scp-deploy@master
+        uses: burnett01/rsync-deployments@5.2.1
         with:
-          src: ./dist/myliba-frontend
-          host: ${{ secrets.REMOTE_HOST }}
-          remote: /var/www/myliba.celalettindemir.dev/html/
-          port: ${{ secrets.PORT }}
-          user: ${{ secrets.USER }}
-          key: ${{ secrets.KEY }}
+          switches: -avzr --delete
+          path: dist/myliba-frontend
+          remote_path: /var/www/myliba.celalettindemir.dev/html/
+          remote_host: ${{ secrets.REMOTE_HOST }}
+          remote_user: ${{ secrets.USER }}
+          remote_key: ${{ secrets.KEY }}
