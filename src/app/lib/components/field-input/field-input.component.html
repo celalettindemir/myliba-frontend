@@ -1,0 +1,7 @@
+<mat-form-field appearance="fill" class="errorState">
+  <mat-label>{{label}}</mat-label>
+  <input matInput placeholder="{{placeHolder}}" [formControl]="customFormControl">
+  <mat-icon matSuffix>{{iconName}}</mat-icon>
+  <mat-error *ngIf="customFormControl?.invalid">{{getErrorMessage(name,customFormControl.errors)}}</mat-error>
+
+</mat-form-field>

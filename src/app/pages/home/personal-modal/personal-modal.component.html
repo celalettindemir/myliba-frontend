@@ -1,0 +1,12 @@
+
+<h2 mat-dialog-title>{{description}}</h2>
+
+<mat-dialog-content style="display: flex;flex-direction: column;">
+  <app-field-input value="{{personal?.name??''}}" name="name" label="Name" placeHolder="John..." iconName="person" [customFormControl]="name" [getErrorMessage]="errorMessages" ></app-field-input>
+  <app-field-input value="{{personal?.surname??''}}" name="surname" label="Surname" placeHolder="Doe..." iconName="person" [customFormControl]="surname" [getErrorMessage]="errorMessages" ></app-field-input>
+  <app-field-input value="{{personal?.email??''}}" name="email" label="Email" placeHolder="jonh@doe.com" iconName="mail" [customFormControl]="email" [getErrorMessage]="errorMessages"></app-field-input>
+</mat-dialog-content>
+<mat-dialog-actions align="end" style="width: 100%">
+  <button mat-raised-button (click)="close()" >Close</button>
+  <button mat-raised-button color="primary" (click)="save()">Save</button>
+</mat-dialog-actions>
